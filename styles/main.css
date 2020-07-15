@@ -37,19 +37,19 @@
 }
 
 .custom-icon.upwork-icon {
-  background-image: url("../images/icons/upwork-icon.svg");
+  background-image: url("./images/icons/upwork-icon.svg");
 }
 
 .custom-icon.freelancer-icon {
-  background-image: url("../images/icons/freelancer-icon.svg");
+  background-image: url("./images/icons/freelancer-icon.svg");
 }
 
 .custom-icon.peopleperhour-icon {
-  background-image: url("../images/icons/peopleperhour-icon.svg");
+  background-image: url("./images/icons/peopleperhour-icon.svg");
 }
 
 .custom-icon.hubstaff-icon {
-  background-image: url("../images/icons/hubstaff-icon.svg");
+  background-image: url("./images/icons/hubstaff-icon.svg");
 }
 
 .no-margin {
