@@ -24,6 +24,38 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+
+.custom-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 20px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px auto 0px;
+}
+
+.custom-icon.upwork-icon {
+  background-image: url("../images/icons/upwork-icon.svg");
+}
+
+.custom-icon.freelancer-icon {
+  background-image: url("../images/icons/freelancer-icon.svg");
+}
+
+.custom-icon.peopleperhour-icon {
+  background-image: url("../images/icons/peopleperhour-icon.svg");
+}
+
+.custom-icon.hubstaff-icon {
+  background-image: url("../images/icons/hubstaff-icon.svg");
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -2608,6 +2640,7 @@ textarea.form-control:focus, textarea.form-control:active {
 .progress-container.progress-primary .progress-value,
 .progress-container.progress-primary .progress-badge {
   color: #4057a2;
+  font-weight: bold;
 }
 
 .progress-container.progress-info .progress {
@@ -4635,7 +4668,36 @@ Created using IcoMoon - icomoon.io
 }
 
 .card .card-body {
-  min-height: 190px;
+  min-height: 120px;
+}
+
+#skill .card .card-body,
+#experience .card .col-md-9 .card-body {
+  display: flex;
+  align-items: center;
+}
+
+#experience .card .col-md-9 .card-body {
+  justify-content: initial;
+  margin-top: 5px;
+}
+
+#skill .card .card-body .skill-name {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  font-size: 1.57em;
+  line-height: 1.4em;
+}
+
+#skill .card .col-md-9,
+#experience .card .col-md-9 {
+  padding-left: 0px;
+}
+
+#skill .card .col-md-9 .skills-list {
+  font-size: 1.57em;
+  line-height: 1.4em;
 }
 
 .card[data-background-color="orange"] {
@@ -7168,7 +7230,6 @@ Created using IcoMoon - icomoon.io
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
-  padding-top: 60px;
   padding-right: 0;
   text-align: center;
   color: #fff;
@@ -7181,7 +7242,6 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-education .cc-education-header {
-  padding-top: 60px;
   padding-right: 0;
   text-align: center;
   color: #fff;
@@ -7272,4 +7332,24 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0;
+}
+
+#notification {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 20px;
+  bottom: 0px;
+  z-index: 99999999;
+  background: #4057a2b3;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 3px;
+  transition: all .5s;
+}
+
+#notification.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 90px;
 }
