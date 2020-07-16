@@ -5,12 +5,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
     function success() {
         form.reset();
-        status.innerHTML = 'Thanks for contacting me! I will be in touch with you shortly.';
+        status.innerHTML = 'Thanks for contacting with me! I will be in touch with you ASAP.';
         status.classList = 'active';
 
         setTimeout(() => {
             status.classList = '';
-        }, 3000);
+        }, 5000);
     }
 
     function error() {
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             status.classList = '';
-        }, 3000);
+        }, 5000);
     }
 
     form.addEventListener('submit', function(event) {
