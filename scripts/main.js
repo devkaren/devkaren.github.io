@@ -7,6 +7,19 @@ $(document).ready(function() {
     // once: true  
   }); // initialize animate on scroll library
 });
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    document.getElementById('loader').classList.add('animation-none');
+    setTimeout(function () {
+      document.getElementById('loader').classList.add('none');
+      document.getElementById('page').classList.remove('none');
+
+      setTimeout(function () {
+        document.getElementById('page').classList.add('animation-visible');
+      }, 500);
+    }, 500);
+  }
+};
 
 // Smooth scroll for links with hashes
 $('a.smooth-scroll')
