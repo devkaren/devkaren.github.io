@@ -7351,10 +7351,11 @@ Created using IcoMoon - icomoon.io
     content: "";
     border: 15px solid rgba(15, 90, 153, 0.6);
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 240px;
+    width: 240px;
     position: absolute;
-    left: 0;
+    left: -5px;
+    margin-top: -5px;
     -webkit-animation: pulsate 1.6s ease-out;
     animation: pulsate 1.6s ease-out;
     -webkit-animation-iteration-count: infinite;
@@ -7366,8 +7367,8 @@ Created using IcoMoon - icomoon.io
 .cc-profile-image img {
     position: relative;
     border-radius: 50%;
-    height: 180px;
-    width: 180px;
+    height: 240px;
+    width: 240px;
     padding: 0;
     margin: 0;
     border: 15px solid transparent;
